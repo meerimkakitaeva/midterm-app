@@ -7,6 +7,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,27 +16,29 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Flutter App'),
-          bottom: TabBar(
+          title: const Text('Midterm App'),
+          bottom: const TabBar(
             tabs: [
               Tab(icon: Icon(Icons.list), text: "List"),
               Tab(icon: Icon(Icons.map), text: "Map"),
             ],
           ),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [
             ListScreen(),
             MapScreen(),
