@@ -1,16 +1,5 @@
 # app
+Flutter project with two tabs. List and map.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/user-attachments/assets/5f5026a6-6b65-412f-adf2-345826d82de8)
+![image](https://github.com/user-attachments/assets/6b9dc4b8-5cf3-40ba-b57f-ea31bfe406c6)
