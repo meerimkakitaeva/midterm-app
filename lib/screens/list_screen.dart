@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ListScreen extends StatelessWidget {
-  final List<Map<String, String>> mockData = [
+  final List<Map<String, String>> mockData = const [
     {"title": "New York", "description": "A bustling metropolis."},
     {"title": "San Francisco", "description": "Home of the iconic Golden Gate."},
     {"title": "Chicago", "description": "Famous for its deep-dish pizza."},
@@ -9,23 +9,25 @@ class ListScreen extends StatelessWidget {
     {"title": "Texas", "description": "A land of vast landscapes and BBQ."},
   ];
 
+  const ListScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('List Screen'),
+        title: const Text('List Screen'),
       ),
       body: ListView.builder(
         itemCount: mockData.length,
         itemBuilder: (context, index) {
           final item = mockData[index];
           return Card(
-            margin: EdgeInsets.all(8.0),
+            margin: const EdgeInsets.all(8.0),
             child: ListTile(
               title: Text(item["title"] ?? ""),
               subtitle: Text(item["description"] ?? ""),
-              leading: Icon(Icons.label),
-              trailing: Icon(Icons.arrow_forward),
+              leading: const Icon(Icons.label),
+              trailing: const Icon(Icons.arrow_forward),
             ),
           );
         },
